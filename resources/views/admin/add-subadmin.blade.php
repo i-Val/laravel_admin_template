@@ -35,13 +35,18 @@
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="col-md-12 p-0">Message</label>
-                            <div class="col-md-12 border-bottom p-0">
-                                <textarea rows="5" class="form-control p-0 border-0"></textarea>
+                            <label class="col-sm-12">Select Role</label>
+
+                            <div class="col-sm-12 border-bottom">
+                                <select class="form-select shadow-none p-0 border-0 form-control-line">
+                                    <option>...</option>
+                                    <option>Super admin</option>
+                                    <option>Sub admin</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="col-sm-12">Select Country</label>
+                            <label class="col-sm-12">Select Location</label>
 
                             <div class="col-sm-12 border-bottom">
                                 <select class="form-select shadow-none p-0 border-0 form-control-line">
