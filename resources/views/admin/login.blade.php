@@ -11,15 +11,15 @@
                         <div class="form-group mb-4">
                             <label for="example-email" class="col-md-12 p-0">Email</label>
                             <div class="col-md-12 border-bottom p-0">
-                                <input type="email" placeholder="johnathan@admin.com"
-                                    class="form-control p-0 border-0" name="example-email"
+                                <input type="email" placeholder="Enter email.."
+                                    class="form-control p-0 border-0" name="email"
                                     id="example-email">
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <label class="col-md-12 p-0">Password</label>
                             <div class="col-md-12 border-bottom p-0">
-                                <input type="password" value="password" class="form-control p-0 border-0">
+                                <input type="password" name="password" class="form-control p-0 border-0">
                             </div>
                         </div>
                         

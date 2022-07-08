@@ -13,19 +13,21 @@
                         <thead>
                             <tr>
                                 <th class="border-top-0">#</th>
-                                <th class="border-top-0">First Name</th>
-                                <th class="border-top-0">Last Name</th>
-                                <th class="border-top-0">Username</th>
+                                <th class="border-top-0">Full Name</th>
+                                <th class="border-top-0">Email</th>
+                                <th class="border-top-0">Location</th>
                                 <th class="border-top-0">Role</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>Deshmukh</td>
-                                <td>Prohaska</td>
-                                <td>@Genelia</td>
-                                <td>admin</td>
+                                @foreach ($admins as $admin)
+                                    <td>$admin->id</td>
+                                <td>$dmin->name</td>
+                                <td>$user->email</td>
+                                <td>$user->location</td>
+                                <td>$user->role</td>
+                                @endforeach
                             </tr>
                             <tr>
                                 <td>2</td>

@@ -13,19 +13,23 @@
                         <thead>
                             <tr>
                                 <th class="border-top-0">#</th>
-                                <th class="border-top-0">First Name</th>
-                                <th class="border-top-0">Last Name</th>
-                                <th class="border-top-0">Username</th>
-                                <th class="border-top-0">Role</th>
+                                <th class="border-top-0">title</th>
+                                <th class="border-top-0">description Name</th>
+                                <th class="border-top-0">body</th>
+                                <th class="border-top-0">image</th>
+                                <th class="border-top-0">category</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>Deshmukh</td>
-                                <td>Prohaska</td>
-                                <td>@Genelia</td>
-                                <td>admin</td>
+                                @foreach ($blogs as $blog)
+                                    <td>$blog->id</td>
+                                <td>$user->tile</td>
+                                <td>$user->description</td>
+                                <td>$user->body</td>
+                                <td>$user->image</td>
+                                <td>$user->category</td>
+                                @endforeach
                             </tr>
                             <tr>
                                 <td>2</td>

@@ -13,20 +13,23 @@
                         <thead>
                             <tr>
                                 <th class="border-top-0">#</th>
-                                <th class="border-top-0">First Name</th>
-                                <th class="border-top-0">Last Name</th>
-                                <th class="border-top-0">Username</th>
-                                <th class="border-top-0">Role</th>
+                                <th class="border-top-0">Name</th>
+                                <th class="border-top-0">Description</th>
+                                <th class="border-top-0">Status</th>
+                                <th class="border-top-0">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Deshmukh</td>
-                                <td>Prohaska</td>
-                                <td>@Genelia</td>
+                            @foreach ($roles as $role)
+                                <tr>
+                                <td>$role->id</td>
+                                <td>$role->name</td>
+                                <td>$role->description</td>
+                                <td>$role->status</td>
                                 <td>admin</td>
-                            </tr>
+                                </tr>
+                            @endforeach
+                            
                             <tr>
                                 <td>2</td>
                                 <td>Deshmukh</td>

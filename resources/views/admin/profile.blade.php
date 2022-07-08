@@ -1,6 +1,5 @@
 @extends('layouts/admin')
 @section('section')
-<!-- Row -->
     <div class="row">
         <!-- Column -->
         <div class="col-lg-4 col-xlg-3 col-md-12">
@@ -10,8 +9,8 @@
                         <div class="user-content">
                             <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg"
                                     class="thumb-lg img-circle" alt="img"></a>
-                            <h4 class="text-white mt-2">User Name</h4>
-                            <h5 class="text-white mt-2">info@myadmin.com</h5>
+                            <h4 class="text-white mt-2">$user->name</h4>
+                            <h5 class="text-white mt-2">$user->email</h5>
                         </div>
                     </div>
                 </div>
@@ -71,18 +70,17 @@
                             <label class="col-sm-12">Select Country</label>
 
                             <div class="col-sm-12 border-bottom">
-                                <select class="form-select shadow-none p-0 border-0 form-control-line">
-                                    <option>London</option>
-                                    <option>India</option>
-                                    <option>Usa</option>
-                                    <option>Canada</option>
-                                    <option>Thailand</option>
+                                <select class="form-select shadow-none p-0 border-0 form-control-line" name="location">
+                                    @foreach ($locations as $location)
+                                        <option value="$location->name">$location->name</option>
+                                    @endforeach
+                                    
                                 </select>
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <div class="col-sm-12">
-                                <button class="btn btn-success">Update Profile</button>
+                                <button class="btn btn-success" type="submit">Update Profile</button>
                             </div>
                         </div>
                     </form>
@@ -91,17 +89,5 @@
         </div>
         <!-- Column -->
     </div>
-    <!-- Row -->
-    <!-- ============================================================== -->
-    <!-- End PAge Content -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- Right sidebar -->
-    <!-- ============================================================== -->
-    <!-- .right-sidebar -->
-    <!-- ============================================================== -->
-    <!-- End Right sidebar -->
-    <!-- ============================================================== -->
-
 @endsection
                 

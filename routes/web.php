@@ -29,8 +29,8 @@ Route::get('/admin/logout', [AuthConroller::class, 'logout']);
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/admin', [AdminController::class, 'dashboard']);
-Route::get('/dashboard', [AdminController::class, 'dashboard']);
+Route::get('/admin/{id}', [AdminController::class, 'dashboard']);
+Route::get('/dashboard/{id}', [AdminController::class, 'dashboard']);
 Route::get('/profile', [AdminController::class, 'profile']);
 Route::get('/layout', function () {
     return view('layouts/admin');
