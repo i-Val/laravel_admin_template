@@ -6,7 +6,8 @@
         <div class="col-lg-8 col-xlg-9 col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form class="form-horizontal form-material">
+                    <form action="/admin/add-category" method="post" class="form-horizontal form-material">
+                        @csrf
                         <div class="form-group mb-4">
                             <label class="col-md-12 p-0">Category Name</label>
                             <div class="col-md-12 border-bottom p-0">
@@ -14,14 +15,14 @@
                                     class="form-control p-0 border-0"> </div>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="col-md-12 p-0">Message</label>
+                            <label class="col-md-12 p-0">description</label>
                             <div class="col-md-12 border-bottom p-0">
-                                <textarea rows="5" class="form-control p-0 border-0"></textarea>
+                                <textarea rows="5" class="form-control p-0 border-0" name="description"></textarea>
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <div class="col-sm-12">
-                                <button class="btn btn-success">Add Category</button>
+                                <button type="submit" class="btn btn-success">Add Category</button>
                             </div>
                         </div>
                     </form>

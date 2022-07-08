@@ -6,7 +6,8 @@
         <div class="col-lg-8 col-xlg-9 col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form class="form-horizontal form-material">
+                    <form action="/admin/add-subadmin"  method="post" class="form-horizontal form-material">
+                        @csrf
                         <div class="form-group mb-4">
                             <label class="col-md-12 p-0">Full Name</label>
                             <div class="col-md-12 border-bottom p-0">
@@ -92,7 +93,7 @@
                         </div>
                         <div class="form-group mb-4">
                             <div class="col-sm-12">
-                                <button class="btn btn-success">Add Sub-admin</button>
+                                <button type="submit" class="btn btn-success">Add Sub-admin</button>
                             </div>
                         </div>
                     </form>

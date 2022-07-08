@@ -32,7 +32,8 @@ class BlogController extends Controller
             "title" => 'required|string|max:70',
             "description" => 'required|string|max:70',
             "body" => 'required|string',
-            "image" => 'required'
+            "image" => 'required',
+            "category"=>'required'
         ]);
 
         if($data->fails()){
@@ -59,7 +60,8 @@ class BlogController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'body' => $request->body,
-            'image'=>$gimagepath
+            'image'=>$gimagepath,
+            'category'=>$request->category
         ]);
        
 

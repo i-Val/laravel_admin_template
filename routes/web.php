@@ -10,7 +10,10 @@ use App\Http\Controllers\AdminController;
 |--------------------------------------------------------------------------
 */
 Route::get('/admin/register', [AuthConroller::class, 'register']);
-Route::get('/admin/login', [AuthConroller::class, 'login']);
+Route::get('/admin/login', function () {
+    return view('admin/login');
+});
+Route::post('/admin/login', [AuthConroller::class, 'login']);
 Route::get('/admin/logout', [AuthConroller::class, 'logout']);
 /*
 |--------------------------------------------------------------------------
